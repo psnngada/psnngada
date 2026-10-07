@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="psnBg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stopColor="#222226" />
+      <stop offset="65%" stopColor="#151518" />
+      <stop offset="100%" stopColor="#08080a" />
+    </radialGradient>
+
+    <!-- Orange Gradient -->
+    <linearGradient id="psnOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#ff7a18" />
+      <stop offset="50%" stopColor="#f05505" />
+      <stop offset="100%" stopColor="#c73e00" />
+    </linearGradient>
+
+    <!-- Green Shield Gradient -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#16a34a" />
+      <stop offset="50%" stopColor="#15803d" />
+      <stop offset="100%" stopColor="#14532d" />
+    </linearGradient>
+
+    <!-- Star Definition -->
+    <g id="starDef">
+      <polygon points="0,-40 12,-12 42,-10 20,12 26,42 0,25 -26,42 -20,12 -42,-10 -12,-12" fill="url(#psnOrange)" stroke="#9a3412" stroke-width="1.5" />
+    </g>
+
+    <!-- Text Curved Path for PERSERIKATAN SEPAKBOLA -->
+    <path id="textArcUpper" d="M 120 530 A 405 405 0 0 0 880 530" fill="none" />
+    
+    <!-- Text Curved Path for NGADA -->
+    <path id="textArcLower" d="M 230 750 A 395 395 0 0 0 770 750" fill="none" />
+  </defs>
+
+  <!-- Solid Black Canvas Base -->
+  <rect width="1000" height="1000" fill="#000000" />
+
+  <!-- Outer Orange Ring -->
+  <circle cx="500" cy="500" r="485" fill="none" stroke="#f05505" stroke-width="26" />
+  <circle cx="500" cy="500" r="468" fill="none" stroke="#7c2d12" stroke-width="4" />
+
+  <!-- Dark Disc Interior -->
+  <circle cx="500" cy="500" r="464" fill="url(#psnBg)" />
+
+  <!-- Seven Orange Stars on Top Arc -->
+  <!-- 1. Center Star (Largest) -->
+  <g transform="translate(500, 132) scale(1.6)">
+    <use href="#starDef" />
+  </g>
+  <!-- 2. Left Stars -->
+  <g transform="translate(378, 168) rotate(-16) scale(1.15)">
+    <use href="#starDef" />
+  </g>
+  <g transform="translate(270, 245) rotate(-33) scale(1.02)">
+    <use href="#starDef" />
+  </g>
+  <g transform="translate(190, 350) rotate(-50) scale(0.92)">
+    <use href="#starDef" />
+  </g>
+  <!-- 3. Right Stars -->
+  <g transform="translate(622, 168) rotate(16) scale(1.15)">
+    <use href="#starDef" />
+  </g>
+  <g transform="translate(730, 245) rotate(33) scale(1.02)">
+    <use href="#starDef" />
+  </g>
+  <g transform="translate(810, 350) rotate(50) scale(0.92)">
+    <use href="#starDef" />
+  </g>
+
+  <!-- Football / Soccer Ball below Center Star -->
+  <g transform="translate(500, 248)">
+    <circle cx="0" cy="0" r="48" fill="#f8fafc" stroke="#09090b" stroke-width="4" />
+    <!-- Center pentagon -->
+    <polygon points="0,-15 14.3,-4.6 8.8,12.1 -8.8,12.1 -14.3,-4.6" fill="#18181b" />
+    <!-- Radiating seams -->
+    <line x1="0" y1="-15" x2="0" y2="-37" stroke="#18181b" stroke-width="3.5" />
+    <line x1="14.3" y1="-4.6" x2="35" y2="-12" stroke="#18181b" stroke-width="3.5" />
+    <line x1="8.8" y1="12.1" x2="25" y2="34" stroke="#18181b" stroke-width="3.5" />
+    <line x1="-8.8" y1="12.1" x2="-25" y2="34" stroke="#18181b" stroke-width="3.5" />
+    <line x1="-14.3" y1="-4.6" x2="-35" y2="-12" stroke="#18181b" stroke-width="3.5" />
+    <!-- Surrounding panels -->
+    <polygon points="0,-37 -16,-45 16,-45" fill="#18181b" />
+    <polygon points="35,-12 46,-2 44,-22" fill="#18181b" />
+    <polygon points="25,34 40,34 27,45" fill="#18181b" />
+    <polygon points="-25,34 -40,34 -27,45" fill="#18181b" />
+    <polygon points="-35,-12 -46,-2 -44,-22" fill="#18181b" />
+  </g>
+
+  <!-- Laurel Wreath (Daun Laurel Oranye Mengelilingi Perisai) -->
+  <g fill="url(#psnOrange)" stroke="#9a3412" stroke-width="1.5">
+    <!-- Left Branch -->
+    <path d="M 444 266 C 404 254 362 284 350 306 C 368 298 404 290 444 266 Z" />
+    <path d="M 394 310 C 352 302 316 336 308 366 C 326 354 362 344 394 310 Z" />
+    <path d="M 352 374 C 312 370 280 414 276 446 C 294 432 328 416 352 374 Z" />
+    <path d="M 326 454 C 286 460 266 510 270 538 C 288 522 316 498 326 454 Z" />
+    <path d="M 318 542 C 290 558 280 606 290 634 C 304 614 328 588 318 542 Z" />
+    <path d="M 338 630 C 318 654 326 694 348 714 C 352 690 364 666 338 630 Z" />
+    <path d="M 386 702 C 370 726 390 758 418 766 C 414 742 418 718 386 702 Z" />
+
+    <!-- Right Branch -->
+    <path d="M 556 266 C 596 254 638 284 650 306 C 632 298 596 290 556 266 Z" />
+    <path d="M 606 310 C 648 302 684 336 692 366 C 674 354 638 344 606 310 Z" />
+    <path d="M 648 374 C 688 370 720 414 724 446 C 706 432 672 416 648 374 Z" />
+    <path d="M 674 454 C 714 460 734 510 730 538 C 712 522 684 498 674 454 Z" />
+    <path d="M 682 542 C 710 558 720 606 710 634 C 696 614 672 588 682 542 Z" />
+    <path d="M 662 630 C 682 654 674 694 652 714 C 648 690 636 666 662 630 Z" />
+    <path d="M 614 702 C 630 726 610 758 582 766 C 586 742 582 718 614 702 Z" />
+  </g>
+
+  <!-- Green Shield of Ngada -->
+  <g transform="translate(500, 502)">
+    <!-- Shield Border & Body -->
+    <path
+      d="M 0 -178 L 116 -146 L 148 -60 L 148 70 C 148 144 76 200 0 224 C -76 200 -148 144 -148 70 L -148 -60 L -116 -146 Z"
+      fill="url(#shieldGrad)"
+      stroke="#f59e0b"
+      stroke-width="7"
+    />
+
+    <!-- Small Star at Crown of Shield -->
+    <g transform="translate(0, -138) scale(0.7)">
+      <use href="#starDef" />
+    </g>
+
+    <!-- Ribbon with 'NGADA' -->
+    <path
+      d="M -76 -92 L 76 -92 L 88 -66 L 76 -62 L -76 -62 L -88 -66 Z"
+      fill="#f05505"
+      stroke="#7c2d12"
+      stroke-width="2"
+    />
+    <text
+      x="0"
+      y="-70"
+      fill="#000000"
+      font-size="22"
+      font-weight="900"
+      letter-spacing="5"
+      text-anchor="middle"
+      font-family="system-ui, -apple-system, sans-serif"
+    >
+      NGADA
+    </text>
+
+    <!-- Heap of White Stones at Base (Batu Megalitikum Bajawa) -->
+    <g fill="#f8fafc" stroke="#334155" stroke-width="1.5">
+      <ellipse cx="-44" cy="116" rx="16" ry="12" />
+      <ellipse cx="-16" cy="112" rx="18" ry="14" />
+      <ellipse cx="16" cy="112" rx="18" ry="14" />
+      <ellipse cx="44" cy="116" rx="16" ry="12" />
+      <ellipse cx="-30" cy="96" rx="16" ry="12" />
+      <ellipse cx="0" cy="92" rx="18" ry="14" />
+      <ellipse cx="30" cy="96" rx="16" ry="12" />
+    </g>
+
+    <!-- Orange Tied Ribbon around stones -->
+    <path
+      d="M -52 124 C -20 136 20 136 52 124"
+      fill="none"
+      stroke="#f05505"
+      stroke-width="8"
+      stroke-linecap="round"
+    />
+
+    <!-- Traditional Ngadhu Monument Post in Black with White Carvings -->
+    <path
+      d="M -12 80 L 12 80 L 8 20 L 26 -24 L 16 -28 L 6 -4 L 4 -52 L -4 -52 L -6 -4 L -16 -28 L -26 -24 L -8 20 Z"
+      fill="#09090b"
+      stroke="#ffffff"
+      stroke-width="1.8"
+    />
+    <circle cx="0" cy="16" r="4.5" fill="#ffffff" />
+    <circle cx="0" cy="40" r="4.5" fill="#ffffff" />
+    <circle cx="0" cy="60" r="4.5" fill="#ffffff" />
+
+    <!-- Rice Stalk (Left, Golden) -->
+    <g fill="#fbbf24" stroke="#d97706" stroke-width="1">
+      <path d="M -88 60 C -96 20 -80 -30 -50 -50 C -56 -30 -70 20 -80 60 Z" />
+      <ellipse cx="-64" cy="-28" rx="8" ry="4" transform="rotate(-30, -64, -28)" />
+      <ellipse cx="-72" cy="-4" rx="8" ry="4" transform="rotate(-20, -72, -4)" />
+      <ellipse cx="-80" cy="20" rx="8" ry="4" transform="rotate(-10, -80, 20)" />
+      <ellipse cx="-84" cy="44" rx="8" ry="4" transform="rotate(0, -84, 44)" />
+    </g>
+
+    <!-- Cotton Stalk (Right, White with Green Calyx) -->
+    <g fill="#ffffff" stroke="#16a34a" stroke-width="1.6">
+      <circle cx="56" cy="-28" r="7" />
+      <circle cx="66" cy="-4" r="7" />
+      <circle cx="72" cy="20" r="7" />
+      <circle cx="76" cy="44" r="7" />
+      <circle cx="68" cy="68" r="7" />
+    </g>
+  </g>
+
+  <!-- Typography Arc 1: PERSERIKATAN SEPAKBOLA -->
+  <text
+    fill="#f05505"
+    font-size="57"
+    font-weight="900"
+    font-family="'Times New Roman', Georgia, serif"
+    letter-spacing="5"
+    filter="drop-shadow(0 3px 6px rgba(0,0,0,0.9))"
+  >
+    <textPath
+      href="#textArcUpper"
+      startOffset="50%"
+      text-anchor="middle"
+    >
+      PERSERIKATAN SEPAKBOLA
+    </textPath>
+  </text>
+
+  <!-- Typography Arc 2: NGADA -->
+  <text
+    fill="#f05505"
+    font-size="88"
+    font-weight="900"
+    font-family="'Times New Roman', Georgia, serif"
+    letter-spacing="16"
+    filter="drop-shadow(0 4px 8px rgba(0,0,0,0.95))"
+  >
+    <textPath
+      href="#textArcLower"
+      startOffset="50%"
+      text-anchor="middle"
+    >
+      NGADA
+    </textPath>
+  </text>
+</svg>

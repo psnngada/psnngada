@@ -1,0 +1,6 @@
+{
+  "name": "PSN Ngada - Website Resmi Klub Liga 3 Nasional",
+  "description": "Website resmi dan modern klub sepak bola PSN Ngada (Perserikatan Sepakbola Ngada) berlaga di Liga 3 Nasional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
